@@ -1,0 +1,479 @@
+/*****************
+   General Styles
+******************/
+html, body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+  width: 25%;
+}
+
+.white {
+  color: #FFF;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 39px;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  width: 43px;
+}
+
+/*****************
+   Navigation
+******************/
+.nav-link {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navbar {
+  text-align: center;
+  border-bottom: 2px solid;
+}
+
+.navbar ul {
+  display: inline-block;
+}
+
+.navbar ul li > a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar ul {
+  display: inline-block;
+}
+
+.navbar ul li > a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar ul li > a:hover {
+  color: #000;
+}
+
+.navbar ul li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar ul li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*****************
+   HERO
+******************/
+.jumbotron {
+  margin-top: 50px;
+  margin-bottom: 0;
+  height: 100vh;
+  max-height: 746px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(rgba(25, 0, 0, 0.5), rgba(70, 65, 46, 0.7)),
+  url('ec.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.hero-social {
+  display: none;
+}
+
+.hero-social i {
+  color: #FFF;
+}
+
+.hero-social i:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lead {
+  font-size: 1.4em;
+}
+
+.contact-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.fa-chevron-down {
+  color: #FFF;
+}
+
+.contactBtn {
+  font-size: 20px;
+  margin: 0 auto;
+  color: #FFF;
+  background: none;
+  border: 1px solid #FFF;
+  width: 177px;
+  height: 50px;
+  display: block;
+}
+
+.contactBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+@media screen and (min-width: 544px) {
+  .hero-social {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 103%;
+    list-style: none;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4em !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-social {
+    font-size: initial;
+    left: 115%;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .lead {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-social {
+    left: 150%;
+  }
+}
+
+/*****************
+   About
+*****************/
+
+.about-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.about-img.about-img__mobile {
+  background-image: url('RequizaLogo.png');
+  background-position: 50%;
+  border-radius: 50%;
+  width: 238px;
+  height: 238px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-img.about-img__large {
+  background-image: url('RequizaLogo.png');
+  background-position: 70%;
+}
+
+.about-img.about-img__extralarge {
+  background-image: url('RequizaLogo.png');
+  background-position: 70%;
+}
+
+.divider {
+  display: none;
+  background: #FFF;
+  position: absolute;
+  height: 100%;
+  width: 104px;
+  z-index: 1;
+  left: 50%;
+  transform: skewX(9deg);
+  transform-origin: 0 98%;
+}
+
+.left {
+  margin-bottom: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.right p {
+  text-align: justify;
+  max-width: 700px;
+}
+
+.visible-xs {
+  display: none;
+}
+
+.visible-xl {
+  display: none;
+}
+
+@media (max-width: 544px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .visible-xs {
+    display: block;
+  }
+}
+
+@media (min-width: 544px) {
+  .circle {
+    width: 125px;
+    height: 125px;
+  }
+
+  .visible-sm {
+    display: block;
+  }
+
+  .divider {
+    display: block;
+  }
+
+  .col {
+    height: 647px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .right p {
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+
+  .right h2 {
+    margin-left: 10px;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .visible-sm {
+    display: none;
+  }
+
+  .visible-xl {
+    display: block;
+  }
+}
+
+/*****************
+   Skills
+******************/
+
+.skills {
+  background: black;
+}
+
+.lead {
+  font-size: 1.2em;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  border-width: 9px;
+  width: 110px;
+  height: 110px;
+  margin: 10px auto;
+}
+
+@media (min-width: 544px) {
+  .circle {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+/*****************
+   Work
+******************/
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.work .btn-primary {
+  margin-top: 5px;
+}
+
+.box {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 35px;
+  color: black;
+  background: linear-gradient(
+     white, white 50%, #8aacb8
+     50%, #8aacb8);
+  background-size: 100% 202%;
+  transition: all 0.2s ease;
+  animation: down-bump 0.4s ease;
+}
+
+.btn-primary {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn-primary.disabled:hover, .btn-primary:disabled:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn-primary:hover {
+    background: #46412E;
+}
+
+@media (min-width: 768px) {
+  .box {
+    height: 550px;
+    padding-bottom: 0;
+  }
+}
+
+/*****************
+   Contact
+******************/
+label {
+  float: left;
+}
+
+.social-media {
+  padding-left: 0;
+}
+
+.contactform .social-media li {
+  display: inline-block;
+}
+
+.contactform .social-media li i {
+  color: #000;
+}
+
+.modal-hr {
+  width: 75%;
+}
+
+/*****************
+   Footer
+******************/
+
+footer {
+  background: rgb(70,65,46);
+  position: relative;
+}
+
+.footer-divider {
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  background: rgb(70,65,46);
+  top: -50px;
+  transform: skewY(-1deg);
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li i:hover {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+footer a {
+  color: #FFF;
+  font-weight: 800;
+}
+
+footer a:hover {
+  color: #FFF;
+}
+
+/*****************
+   Helpers
+******************/
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.m-t-4 {
+  margin-bottom: 3.5rem;
+}
+
+.m-b-4 {
+  margin-bottom: 3.5rem;
+}
+
+.m-t-5 {
+  margin-bottom: 4rem;
+}
+
+.m-b-5 {
+  margin-bottom: 4rem;
+}
+
+.m-t-6 {
+  margin-bottom: 4.5rem;
+}
+
+.m-b-6 {
+  margin-bottom: 4.5rem;
+}

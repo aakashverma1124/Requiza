@@ -1,0 +1,142 @@
+.carousel{
+    
+}
+
+.row__carousel{
+  display:inline-block;
+  float:none;
+  border-radius: 6px;
+}
+.row--text-center{
+  text-align:center;
+
+}
+.carousel-control{
+  opacity:1;
+  background-image:none !important;
+}
+
+.carousel-control.left{
+  left:-100px;
+}
+
+.carousel-control.right{
+  right:-100px;
+}
+
+.carousel-inner{
+  margin-top: -25px;
+}
+.carousel-control__img{
+ position: absolute;
+top: 50%;
+margin-top: -90px;
+}
+
+.carousel-control.left .carousel-control__img{
+  left:0;
+}
+
+.carousel-control.right .carousel-control__img{
+  right:0;
+}
+
+.carousel-indicators li{
+  height:12px;
+  width:12px;
+    background-color: #fff;
+    border: 2px solid #8198ae;
+  margin-right:8px;
+}
+
+.carousel-indicators li.active{
+  height:14px;
+  width:14px ;
+    background-color: #fff;
+    border: 3px solid #6f79ff;
+  margin-right:10px;
+}
+.item {
+  text-align:left;
+  position:relative;
+  padding:25px 15px 0px 25px;
+}
+
+.item__content{
+padding: 40px;
+border-radius: 6px;
+box-shadow:  0 4px 8px 0px rgba(0,0,0,0.2);
+background-color: #fff;
+position: relative;
+}
+.item__img{
+ display:inline-block;
+}
+.item__name{
+display: inline-block;
+font-size: 22px;
+vertical-align: middle;
+font-weight: 700;
+}
+.item__description {
+    margin-top: 35px;
+    color: #8198ae;
+    line-height: 23px;
+}
+.item__avatar{
+height: 60px;
+width: 60px;
+background-image: url("president.png");
+background-size: cover;
+border-radius: 50%;
+margin: 50px auto 15px auto;
+
+}
+
+
+.item__avatar2{
+height: 60px;
+width: 60px;
+background-image: url("himani_mam.png");
+background-size: cover;
+border-radius: 50%;
+margin: 50px auto 15px auto;
+
+}
+
+
+.carousel-indicators {
+    width: auto;
+    margin: 0;
+    right: 68px;
+    text-align: right;
+    top: 72px;
+  left: auto;
+  bottom: auto;
+}
+.item__content:after{
+content: "";
+width: 0;
+height: 670px;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid #fff;
+bottom: -20px;
+position: absolute;
+left: 50%;
+margin-left: -23px;
+filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
+}
+
+.item__people {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.item__occupation {
+    font-size: 14px;
+    color: #8198ae;
+    text-align: center;
+}
